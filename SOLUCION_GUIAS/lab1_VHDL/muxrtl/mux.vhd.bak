@@ -1,0 +1,15 @@
+library ieee;
+USE ieee.std_logic_1164.all;
+
+entity mux is
+  port (
+    x,y : in  std_logic;
+    s   : in  std_logic;
+    m   : out std_logic
+  );
+end entity;
+
+architecture RTL of mux is
+begin
+  m<=(x and not (s)) or (y and s);
+end architecture;

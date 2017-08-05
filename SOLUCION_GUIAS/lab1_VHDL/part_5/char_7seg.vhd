@@ -1,0 +1,18 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity char_7seg is
+  port (
+  C : IN  STD_LOGIC_VECTOR(2 DOWNTO 0);
+  Display : OUT STD_LOGIC_VECTOR(0 to 6)
+  );
+end entity;
+
+architecture char_7seg of char_7seg is
+  begin
+    Display<= "1001000"  when C = "000" else
+              "0110000"  when C = "001" else
+              "1110001"  when C = "010" else
+              "0000001"  when C = "011" else
+              "1111111"  when C = others;
+end architecture;

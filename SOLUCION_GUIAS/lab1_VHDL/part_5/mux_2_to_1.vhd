@@ -1,0 +1,15 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity mux_2_to_1 is
+  port (
+    X,Y   : IN  STD_LOGIC_VECTOR(2 DOWNTO 0);
+    S     : IN  STD_LOGIC;
+    M     : OUT STD_LOGIC_VECTOR(2 DOWNTO 0)
+  );
+end entity;
+
+architecture mux_2_to_1 of mux_2_to_1 is
+begin
+  M<=(NOT(S)AND X)OR(S AND Y);
+end architecture;

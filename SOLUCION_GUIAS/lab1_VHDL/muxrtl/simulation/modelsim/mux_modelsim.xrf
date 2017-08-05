@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, /home/game/electivaIV/PROYECTOS/CLASE_1/muxrtl/mux.vhd
+source_file = 1, /home/game/electivaIV/PROYECTOS/CLASE_1/muxrtl/mux.vwf
+source_file = 1, /home/game/electivaIV/PROYECTOS/CLASE_1/muxrtl/db/mux.cbx.xml
+source_file = 1, /home/game/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, /home/game/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, /home/game/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, /home/game/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = mux
+instance = comp, \m~output , m~output, mux, 1
+instance = comp, \y~input , y~input, mux, 1
+instance = comp, \s~input , s~input, mux, 1
+instance = comp, \x~input , x~input, mux, 1
+instance = comp, \m~0 , m~0, mux, 1
